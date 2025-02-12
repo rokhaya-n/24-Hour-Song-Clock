@@ -20,9 +20,17 @@
 let hr, min, sec, d, mon, yr;
 
 function setup() {
+
+  let canvas = createCanvas(windowWidth, windowHeight);
+  canvas.parent('sketch-container');
+  
   createCanvas(400, 600);
   //colorMode(HSB);
   rectMode(CENTER)
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
